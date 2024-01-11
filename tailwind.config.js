@@ -19,10 +19,14 @@ export default {
           error: colors.rose["800"],
           "error-content": colors.white,
           "base-200": "#F7F7F7",
+          "base-300": colors.gray["300"],
         },
       }
     ],
   },
 
-  plugins: [require("daisyui"),],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("daisyui"),
+  ],
 };

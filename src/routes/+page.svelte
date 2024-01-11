@@ -1,6 +1,8 @@
-<h1 class="h1">Hello world!</h1>
+<h1 class="h1">Hello world! h1</h1>
+<h2 class="h2">Hello world! h2</h2>
+<h3 class="h3">Hello world! h3</h3>
 
-<div class="border border-dashed p-8 *:mt-4 *:p-4 *:border">
+<div class="flex flex-wrap border border-dashed p-8 *:mt-4 *:p-4 *:border">
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
         laborum. Quidem placeat doloribus excepturi explicabo? Eos id quasi
@@ -8,12 +10,14 @@
         molestiae nostrum! Quidem, rem?
     </p>
 
-    <div class="">
+    <div class="basis-1/2">
+        <button class="btn btn-sm">Small (sm)</button>
         <button class="btn">Button</button>
         <button class="btn btn-primary">Primary</button>
         <button class="btn btn-primary btn-outline">Outline</button>
+        <button class="btn btn-lg">Large (lg)</button>
     </div>
-    <div>
+    <div class="basis-1/2">
         <button class="btn btn-secondary">secondary</button>
         <button class="btn btn-accent">accent</button>
         <button class="btn btn-info">info</button>
@@ -23,10 +27,11 @@
         <button class="btn btn-link">link</button>
     </div>
 
-    <form class="bg-base-200">
+    <form class="bg-base-200 border-base-300">
         <label for="foo" class="label">Label</label>
         <input type="text" class="input" id="foo">
-        <button class="btn btn-primary mt-6" type="submit">Submit</button>
+        <button class="btn mt-6" type="submit">Submit</button>
+        <button class="btn btn-primary mt-4" type="submit">Submit</button>
     </form>
 
 </div>
