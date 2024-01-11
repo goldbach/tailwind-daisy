@@ -2,9 +2,9 @@ export default {
 
   content: ['./src/**/*.{html,js,svelte,ts}'],
 
-  theme: {
-    extend: {}
-  },
+  // theme: {
+  //   extend: {}
+  // },
 
   // themes: [
   //   {
@@ -21,5 +21,5 @@ export default {
   //     },
   //   }
   // ],
-  plugins: []
+  plugins: [require("daisyui"), ],
 };
