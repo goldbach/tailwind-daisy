@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.input {
+    @apply w-full border rounded-lg border-base-300 focus:border-primary focus:outline-none;
+}
+.btn {
+    text-transform: uppercase;
+}
