@@ -16,8 +16,24 @@
 
 }
 
+.form-primary * .input {
+    @apply input-primary
+}
+.form-primary * .select {
+    @apply select-primary
+}
+.form-primary * .textarea {
+    @apply textarea-primary
+}
+
 .input {
-    @apply w-full border rounded-lg border-base-300 focus:border-primary focus:outline-none;
+    @apply w-full border rounded-lg border-base-300 focus:outline-none;
+}
+.select {
+    @apply w-full border rounded-lg border-base-300 focus:outline-none;
+}
+.textarea {
+    @apply w-full border rounded-lg border-base-300 focus:outline-none;
 }
 .btn {
     text-transform: uppercase;

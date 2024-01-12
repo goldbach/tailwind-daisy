@@ -2,7 +2,7 @@
 <h2 class="h2">Hello world! h2</h2>
 <h3 class="h3">Hello world! h3</h3>
 
-<div class="flex flex-wrap border border-dashed p-8 *:mt-4 *:p-4 *:border">
+<div class="flex flex-wrap border border-dashed flex-1 p-8 *:p-4 *:border">
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
         laborum. Quidem placeat doloribus excepturi explicabo? Eos id quasi
@@ -27,12 +27,36 @@
         <button class="btn btn-link">link</button>
     </div>
 
-    <form class="bg-base-200 border-base-300">
-        <label for="foo" class="label">Label</label>
-        <input type="text" class="input" id="foo">
-        <button class="btn mt-6" type="submit">Submit</button>
-        <button class="btn btn-primary mt-4" type="submit">Submit</button>
-    </form>
+    <div class="basis-1/2">
+        <form class="bg-base-200 border-base-300 *:mt-4 form-primary">
+            <label for="foo" class="label">Label</label>
+            <input type="text" class="input" id="foo">
+            <textarea class="textarea" name="txt" id="txt" cols="30" rows="3"></textarea>
+            <div>
+                <select class="select">
+                    <option value="foo">foo</option>
+                    <option value="bar">bar</option>
+                </select>
+            </div>
+            <button class="btn mt-6" type="submit">Submit</button>
+            <button class="btn btn-primary mt-4" type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="basis-1/2">
+        <form class="bg-base-200 border-base-300 *:mt-4">
+            <label for="foo" class="label label-text">Label</label>
+            <input type="text" class="input input-primary" id="foo">
+            <textarea class="textarea textarea-primary" name="txt" id="txt" cols="30" rows="3"></textarea>
+            <div>
+                <select class="select select-primary">
+                    <option value="foo">foo</option>
+                    <option value="bar">bar</option>
+                </select>
+            </div>
+            <button class="btn mt-6" type="submit">Submit</button>
+            <button class="btn btn-primary mt-4" type="submit">Submit</button>
+        </form>
+    </div>
 
 </div>
 <div class="p-8 *:p-2 *:mt-2 *:border *:rounded *:h-24">
